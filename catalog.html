@@ -8,13 +8,11 @@
 
 <body>
     <header class="page-header">
+        <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="" alt="Логотип магазин Gllacy Shop">
+        </a>
         <nav class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-logo" href="index.html">
-                        <img class="page-header-logo" src="" alt="Логотип магазин Gllacy Shop">
-                    </a>
-                </li>
                 <li class="navigation-item">
                     <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
                 </li>
@@ -25,61 +23,57 @@
                     <a class="navigation-link" href="#">О компании</a>
                 </li>
             </ul>
-            <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
-                    <a class="phone" href="tel:+7 (800) 555-86-28">+7 (800) 555-86-28</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">
-                            Поиск
-                        </span>
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Вход</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
-                        <span class="visually-hidden">
-                            Корзина
-                        </span>
-                        2 товара
-                    </a>
-                </li>
-            </ul>
         </nav>
+        <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+                <a class="phone" href="tel:+78005558628">+7(800)555-86-28</a>
+            </li>
+            <li class="navigation-user-item">
+                <a class="navigation-link" href="#">
+                    <span class="visually-hidden">
+                        Поиск
+                    </span>
+                </a>
+            </li>
+            <li class="navigation-user-item">
+                <a class="navigation-link" href="#">Вход</a>
+            </li>
+            <li class="navigation-user-item">
+                <a class="navigation-link" href="#">
+                    <span class="visually-hidden">
+                        Корзина
+                    </span>
+                    2 товара
+                </a>
+            </li>
+        </ul>
+
     </header>
     <main class="main-inner">
-        <header class="inner-header">
-            <h1 class="visually-hidden">Каталог</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-                </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Сливочное</a>
-                </li>
-            </ul>
-        </header>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Сливочное</a>
+            </li>
+        </ul>
         <section class="catalog">
             <h1 class="catalog-name">Сливочное мороженое</h1>
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Сортировка:</legend>
-                    <form class="sorting-type">
-                        <label class="visually-hidden" for="sorting">Сортировка</label>
-                        <select class="select-control" name="sorting" id="sorting">
-                            <option value="popular">по популярности</option>
-                            <option value="cheap">сначала дешевые</option>
-                            <option value="expensive">сначала дорогие</option>
-                        </select>
-                        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-                    </form>
+                    <label class="visually-hidden" for="sorting">Сортировка</label>
+                    <select class="select-control" name="sorting" id="sorting">
+                        <option value="popular">по популярности</option>
+                        <option value="cheap">сначала дешевые</option>
+                        <option value="expensive">сначала дорогие</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Отсортировать продукты</button>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
@@ -359,14 +353,14 @@
                     </button>
                 </li>
             </ul>
-            <ul class="pagination>
-                <li class=" pagination-item">
-                <a class="pagination-link pagination-prev pagination-dasabled">
-                    <span class="visualle-hidden">Предыдущая страница</span>
-                </a>
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-prev pagination-dasabled">
+                        <span class="visualle-hidden">Предыдущая страница</span>
+                    </a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" pagination-current>1</a>
+                    <a class="pagination-link pagination-current">1</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">2</a>
@@ -390,7 +384,7 @@
         </section>
     </main>
     <footer class="page-footer">
-        <section class="footer-social">
+        <div class="footer-social">
             <h2 class="visually-hidden">мы в социальных сетях</h2>
             <ul class="social-icon">
                 <li class="social-icon-item">
@@ -409,8 +403,8 @@
                     </a>
                 </li>
             </ul>
-        </section>
-        <section class="documents">
+        </div>
+        <div class="documents">
             <h2 class="documents-title">Для поставщиков</h2>
             <ul class="documents-list">
                 <li class="document-item">
@@ -423,12 +417,12 @@
                     <a class="documents-link" href="#">Экологические стандарты</a>
                 </li>
             </ul>
-        </section>
-        <section class="made in">
+        </div>
+        <div class="made in">
             <h2 class="made in-title">.html academy</h2>
             <p class="made-in-text">Сделано в<a class="htmlacademy-link" href="https://htmlacademy.ru">.htmlacademy</a>
                 &#169; 2021</p>
-        </section>
+            </div>
     </footer>
 </body>
 
