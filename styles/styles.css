@@ -1,0 +1,410 @@
+@font-face {
+    font-family: "inter-400";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter-700";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter-900";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "inter-400", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background: #FEAFC3;
+    color: #2D3440;
+}
+.main-index, .page-footer ,.page-header{
+    margin: 0 auto;
+    width: 1366px;
+}
+.visually-hidden {
+    display: none;
+}
+
+.navigation-link {
+    line-height: 20px;
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.navigation-user-link {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.phone {
+    font-family: "inter-700", sans-serif;
+    line-height: 20px;
+    font-weight: 700; 
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none; 
+}
+
+.promo-slider-title {
+    font-family: "inter-900", sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
+.promo-slider-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.promo-slider-order-link, .free-gifts-link {
+    font-family: "inter-700", sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.slider-image {
+    background-image: url("/images/background/background-pink.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.free-gifts-title, .product-title, .advantages-title, .delivery-title, .catalog-name {
+    font-family: "inter-900", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;  
+}
+
+.free-gifts-title {
+    width: 443px;
+    height: 92px;
+}
+
+.free-gifts-article {
+    background-color: #FF7799;
+    border-radius: 16px;
+    width: 570px;
+    height: 268px;
+    padding-left: 40px;
+}
+
+.free-gifts-article-title {
+    font-family: "inter-700", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 321px;
+    height: 30px;
+}
+
+.free-gifts-description {
+    width: 321px;
+    height: 66px;
+}
+
+.product-title {
+    width: 527px;
+    height: 92px;
+}
+
+.card-title, .card-price {
+    font-family: "inter-700", sans-serif;
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 24px; 
+    }
+
+.product-card, .advantages-list, .new-article-title, .subscription-description, .delivery-description, .delivery-form-description, .contacts-address-title, .contacts-phone-title {
+    color: #565C66;
+
+}
+.card-title {
+    text-align: center;
+}
+
+.card-description {
+    text-align: center;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.product-card {
+    background-color: #FCFCFC;
+    width: 270px;
+    height: 281px;
+    border-radius: 8px;
+}
+
+.advantages {    
+    background-image: url("/images/background/waffle.jpg");
+    background-color: #FFFFFF;
+    width: 1170px;
+    height: 480px;
+    border-radius: 16px; 
+}
+
+.advantages-box {
+    background-color:  #FCFCFC;
+    width: 1122px;
+    height: 432px;
+    border-radius: 16px;
+    margin: 24px;
+    position: absolute;
+    margin: 24px;
+}
+
+.advantages-title {
+    width: 995px;
+    height: 92px;
+    margin-left: 63px;
+    margin-right: 63px;
+}
+
+.advantages-description {
+    width: 442px;
+    height: 66px;
+}
+
+.new-article-title {
+    font-family: "inter-400", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 32px 368px 164px 32px;
+    }
+
+.new-article-link {
+    font-family: "inter-700", sans-serif;
+    font-size: 24px; 
+    font-weight: 700;
+    line-height: 30px; 
+    color: #2D3440;
+    text-decoration: none;
+    width: 303px;
+    height: 90px;
+    padding: 64px 235px 62px 32px;
+}
+
+.new-article {
+    background-image: url("/images/background/ice-raspberry.jpg");
+    background-color: #FFFFFF;
+    color: #2D3440;
+    width: 570px;
+    height: 216px;
+    border-radius: 16px;
+}
+
+.subscription {
+    background-image: url("/images/background/post.jpg");
+    background-color: #FFFFFF;
+    width: 570px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+.subscription-box {
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    width: 558px;
+    height: 208px;
+    position: absolute;
+    margin: 6px;
+}
+
+.subscription-description {
+    width: 506px;
+    height: 66px;
+    margin-left: 26px;
+    margin-top: 26px;
+}
+#subscription-email {
+    width: 332px;
+    height: 48px;
+    margin-left: 26px;
+    
+}
+
+.subscription-button, .modal-dialog {
+    font-family: "inter-700", sans-serif;
+    font-size: 16px; 
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #FCFCFC;
+    background-color: #FF2F64;
+    }
+
+.delivery {
+    background-image: url("/images/background/ice-fruits-leaf.jpg");
+    background-color: #FFFFFF;
+    color: #2D3440;
+    width: 1170px;
+    height: 534px;
+    border-radius: 16px;
+}
+
+.delivery-title {
+    width: 356px;
+    height: 92px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.delivery-description {
+    width: 371px;
+    height: 88px;
+    padding-left: 100px;
+}
+
+.delivery-form-description {
+    width: 380px;
+    height: 44px; 
+}
+
+.form-label label, .delivery-form-phone label {
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.delivery-form input, .subscription-form input {
+    line-height: 20px;
+    color: #B9B9B9;
+    border: 1px solid #B9B9B9;
+    box-sizing: border-box;
+    border-radius: 4px;  
+    padding: 14px 16px; 
+}
+
+#delivery-date {
+width: 117px;
+height: 48px;
+}
+
+#delivery-phone {
+    width: 287px;
+    height: 48px;  
+}
+
+#delivery-address {
+    width: 420px;
+    height: 48px;
+}
+
+.contact-box {
+    background-image: url("/images/background/three-ice.jpg");
+    background-color: #FFFFFF;
+    color: #2D3440;
+    width: 1170px;
+    height: 492px;
+    border-radius: 16px;
+}
+
+.contacts-address-title {
+    width: 179px;
+    height: 44px;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-address-text, .contacts-phone-text {
+    font-family: "inter-700", sans-serif;
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.contacts-address-text {
+    width: 263px;
+    height: 48px;
+    font-weight: bold;
+}
+
+.contacts-schedule {
+    font-family: "inter-400", sans-serif;
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 20px; 
+    color: #565C66;
+}
+
+.documents-link {
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+.documents-link .document-bold {
+    font-family: "inter-700", sans-serif;
+    font-weight: 700;
+}
+
+.made-in-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.htmlacademy-link {
+    color: #2D3440;
+}
+ 
+.breadcrumbs, .button, .button .pagination-show-more {
+    font-family: "inter-700", sans-serif;
+    font-size: 14px; 
+    font-weight: 700;
+    line-height: 20px; 
+    color: #2D3440;
+}
+
+.catalog-name {
+    text-align: left;
+}
+
+.catalog-filter-group {
+    font-family: "inter-400", sans-serif;
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.pagination-link {
+    color: #2D3440;
+    background-color: #ffff;
+    text-decoration: none;
+}
+
+.pagination-current {
+    color: #2D3440;
+    background-color: #FCFCFC;
+    border-radius: 50px;
+}
+
+.pagination-disabled, .pagination-next {
+    background-color: #2D3440;
+ }
