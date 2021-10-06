@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "inter-400";
+    font-family: "inter";
     font-style: normal;
     font-weight: 400;
     src: url("/fonts/inter-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "inter-700";
+    font-family: "inter";
     font-style: normal;
     font-weight: 700;
     src: url("/fonts/inter-700.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "inter-900";
+    font-family: "inter";
     font-style: normal;
     font-weight: 900;
     src: url("/fonts/inter-900.woff2") format("woff2");
@@ -23,12 +23,23 @@
 }
 
 body {
-    font-family: "inter-400", sans-serif;
+    font-family: "inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    background: #FEAFC3;
+    font-weight: 400;
+    background-color: #FEAFC3;
     color: #2D3440;
+    }
+
+.body-blue {
+    background-color: #69A9FF;
 }
+
+.body-yellow {
+    background-color: #FCC850;
+
+}
+
 .main-index, .page-footer ,.page-header{
     margin: 0 auto;
     width: 1366px;
@@ -52,8 +63,7 @@ body {
     text-decoration: none;
 }
 
-.phone {
-    font-family: "inter-700", sans-serif;
+.navigation-user-phone {
     line-height: 20px;
     font-weight: 700; 
     text-align: center;
@@ -62,7 +72,6 @@ body {
 }
 
 .promo-slider-title {
-    font-family: "inter-900", sans-serif;
     font-size: 36px;
     line-height: 46px;
     font-weight: 900;
@@ -74,7 +83,6 @@ body {
 }
 
 .promo-slider-order-link, .free-gifts-link {
-    font-family: "inter-700", sans-serif;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -82,14 +90,7 @@ body {
     color: #2D3440;
 }
 
-.slider-image {
-    background-image: url("/images/background/background-pink.png");
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
 .free-gifts-title, .product-title, .advantages-title, .delivery-title, .catalog-name {
-    font-family: "inter-900", sans-serif;
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
@@ -110,7 +111,6 @@ body {
 }
 
 .free-gifts-article-title {
-    font-family: "inter-700", sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -129,7 +129,6 @@ body {
 }
 
 .card-title, .card-price {
-    font-family: "inter-700", sans-serif;
     font-size: 20px; 
     font-weight: 700;
     line-height: 24px; 
@@ -190,7 +189,6 @@ body {
 }
 
 .new-article-title {
-    font-family: "inter-400", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -198,7 +196,6 @@ body {
     }
 
 .new-article-link {
-    font-family: "inter-700", sans-serif;
     font-size: 24px; 
     font-weight: 700;
     line-height: 30px; 
@@ -241,7 +238,7 @@ body {
     margin-left: 26px;
     margin-top: 26px;
 }
-#subscription-email {
+.subscription-email {
     width: 332px;
     height: 48px;
     margin-left: 26px;
@@ -249,7 +246,6 @@ body {
 }
 
 .subscription-button, .modal-dialog {
-    font-family: "inter-700", sans-serif;
     font-size: 16px; 
     font-weight: 700;
     line-height: 20px;
@@ -299,17 +295,17 @@ body {
     padding: 14px 16px; 
 }
 
-#delivery-date {
+.delivery-date {
 width: 117px;
 height: 48px;
 }
 
-#delivery-phone {
+.delivery-phone {
     width: 287px;
     height: 48px;  
 }
 
-#delivery-address {
+.delivery-address {
     width: 420px;
     height: 48px;
 }
@@ -333,7 +329,6 @@ height: 48px;
 }
 
 .contacts-address-text, .contacts-phone-text {
-    font-family: "inter-700", sans-serif;
     font-size: 20px; 
     font-weight: 700;
     line-height: 24px;
@@ -346,7 +341,6 @@ height: 48px;
 }
 
 .contacts-schedule {
-    font-family: "inter-400", sans-serif;
     font-size: 14px; 
     font-weight: 400;
     line-height: 20px; 
@@ -361,7 +355,6 @@ height: 48px;
     text-decoration: none;
 }
 .documents-link .document-bold {
-    font-family: "inter-700", sans-serif;
     font-weight: 700;
 }
 
@@ -375,7 +368,6 @@ height: 48px;
 }
  
 .breadcrumbs, .button, .button .pagination-show-more {
-    font-family: "inter-700", sans-serif;
     font-size: 14px; 
     font-weight: 700;
     line-height: 20px; 
@@ -387,7 +379,6 @@ height: 48px;
 }
 
 .catalog-filter-group {
-    font-family: "inter-400", sans-serif;
     font-size: 14px; 
     font-weight: 400;
     line-height: 20px; 
@@ -395,7 +386,6 @@ height: 48px;
 
 .pagination-link {
     color: #2D3440;
-    background-color: #ffff;
     text-decoration: none;
 }
 
@@ -406,5 +396,5 @@ height: 48px;
 }
 
 .pagination-disabled, .pagination-next {
-    background-color: #2D3440;
+   /* background-color: #2D3440;*/
  }
