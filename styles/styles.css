@@ -22,7 +22,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -37,15 +45,21 @@ body {
 
 .body-yellow {
     background-color: #FCC850;
-
 }
 
-.main-index, .page-footer ,.page-header{
-    margin: 0 auto;
-    width: 1366px;
-}
 .visually-hidden {
     display: none;
+}
+
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1170px; 
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-link {
@@ -55,7 +69,14 @@ body {
     text-decoration: none;
 }
 
-.navigation-user-link {
+.navigation-user-list {
+    margin: 0;
+    padding: 0;
+    width: 419px;
+    margin-left: auto;
+}
+
+.navigation-user-link  {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
@@ -71,15 +92,29 @@ body {
     text-decoration: none; 
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    margin: 0 auto;
+    width: 1170px; 
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .promo-slider-title {
     font-size: 36px;
     line-height: 46px;
     font-weight: 900;
+    width: 470px;
 }
 
 .promo-slider-description {
     font-size: 18px;
     line-height: 24px;
+    width: 414px;
 }
 
 .promo-slider-order-link, .free-gifts-link {
@@ -97,9 +132,16 @@ body {
     text-align: center;  
 }
 
+.free-gifts-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .free-gifts-title {
     width: 443px;
     height: 92px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .free-gifts-article {
@@ -107,8 +149,7 @@ body {
     border-radius: 16px;
     width: 570px;
     height: 268px;
-    padding-left: 40px;
-}
+    }
 
 .free-gifts-article-title {
     font-size: 24px;
@@ -126,6 +167,16 @@ body {
 .product-title {
     width: 527px;
     height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-title, .card-price {
@@ -144,6 +195,16 @@ body {
 
 .card-description {
     text-align: center;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -67px;
 }
 
 .product-card-link {
@@ -183,27 +244,37 @@ body {
     margin-right: 63px;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
 .advantages-description {
     width: 442px;
     height: 66px;
+}
+
+.new-article-subscription-box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .new-article-title {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    padding: 32px 368px 164px 32px;
+    padding-left: 32px;
     }
 
 .new-article-link {
+    display: inline-block;
     font-size: 24px; 
     font-weight: 700;
     line-height: 30px; 
     color: #2D3440;
     text-decoration: none;
     width: 303px;
-    height: 90px;
-    padding: 64px 235px 62px 32px;
+    padding-left: 32px;
 }
 
 .new-article {
@@ -235,13 +306,14 @@ body {
 .subscription-description {
     width: 506px;
     height: 66px;
-    margin-left: 26px;
+    padding-left: 26px;
     margin-top: 26px;
 }
 .subscription-email {
     width: 332px;
     height: 48px;
-    margin-left: 26px;
+    padding-left: 26px;
+    display: inline-block;
     
 }
 
@@ -252,6 +324,11 @@ body {
     text-align: center;
     color: #FCFCFC;
     background-color: #FF2F64;
+    width: 152px;
+    height: 44px;
+    border-radius: 26px;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+
     }
 
 .delivery {
@@ -261,19 +338,29 @@ body {
     width: 1170px;
     height: 534px;
     border-radius: 16px;
+    display: flex;
+  
+}
+
+.delivery-description-box {
+    width: 371px;
+    padding-left: 100px;  
+    margin-right: 135px;
+    margin-top: 167px;
 }
 
 .delivery-title {
-    width: 356px;
-    height: 92px;
-    padding-left: 100px;
     text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
-.delivery-description {
-    width: 371px;
-    height: 88px;
-    padding-left: 100px;
+.delivery-form{
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    width: 500px;
+    height: 406px;
+    margin-top: 64px;
 }
 
 .delivery-form-description {
@@ -310,18 +397,32 @@ height: 48px;
     height: 48px;
 }
 
-.contact-box {
+.contacts {
     background-image: url("/images/background/three-ice.jpg");
     background-color: #FFFFFF;
-    color: #2D3440;
     width: 1170px;
     height: 492px;
     border-radius: 16px;
 }
 
+.contacts-box-wrap {
+    background-color: #FCFCFC;
+    width: 343px;
+    height: 364px;
+    border-radius: 8px;
+    margin-left: 64px;
+    }
+
+.contacts-box {
+    width: 263px;
+    margin-left: 40px;
+}
+
 .contacts-address-title {
     width: 179px;
     height: 44px;
+    margin: 0;
+    padding: 0;
 }
 
 .contacts-address {
@@ -347,6 +448,36 @@ height: 48px;
     color: #565C66;
 }
 
+.modal-dialog {
+    width: 250px;
+    height: 46px;
+    }
+
+.page-footer-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 104px;
+    height: 24px;
+    margin-right: 300px;
+    
+}
+
+.documents-list {
+    margin: 0;
+    padding: 0;
+    width: 356px;
+    height: 48px;
+    margin-right: 200px;
+}
+
 .documents-link {
     font-size: 14px; 
     font-weight: 400;
@@ -356,6 +487,13 @@ height: 48px;
 }
 .documents-link .document-bold {
     font-weight: 700;
+}
+
+.made-in {
+    width: 193px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
 }
 
 .made-in-text {
@@ -374,6 +512,17 @@ height: 48px;
     color: #2D3440;
 }
 
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 807px;
+}
+
 .catalog-name {
     text-align: left;
 }
@@ -382,6 +531,7 @@ height: 48px;
     font-size: 14px; 
     font-weight: 400;
     line-height: 20px; 
+    width: 196px;
 }
 
 .pagination-link {
