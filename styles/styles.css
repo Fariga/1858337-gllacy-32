@@ -1,16 +1,16 @@
 @font-face {
-    font-family: "inter";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/inter-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "inter";
-    font-style: normal;
+  font-family: "inter";
+  font-style: normal;
     font-weight: 700;
-    src: url("/fonts/inter-700.woff2") format("woff2");
+    src: url("../fonts/inter-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "inter";
     font-style: normal;
     font-weight: 900;
-    src: url("/fonts/inter-900.woff2") format("woff2");
+    src: url("../fonts/inter-900.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -26,9 +26,12 @@ html {
     height: 100%;
     box-sizing: border-box;
 }
-*, *::after, *::before { box-sizing: inherit; }
 
-body {
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {  
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -37,16 +40,16 @@ body {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    background-color: #FEAFC3;
+    background-color: #feafc3;
     color: #2D3440;
-    }
+}
 
-.body-blue {
-    background-color: #69A9FF;
+.body-blue {    
+    background-color: #69a9ff;
 }
 
 .body-yellow {
-    background-color: #FCC850;
+    background-color: #fcc850;
 }
 
 .visually-hidden {
@@ -157,22 +160,21 @@ margin: 0;
     color: #2D3440;
     text-decoration: none; 
     display: block;
-   }
+}
 
-    .navigation-link, .navigation-user-phone {
-        min-height: 18px;
-        min-width: 18px;
-        
-    }
+.navigation-link, .navigation-user-phone {
+     min-height: 18px;
+    min-width: 18px;
+}
 
-    .navigation-icon {
-        margin-right: 6px;
-    }
+.navigation-icon {
+     margin-right: 6px;
+}
 
-    .navigation-icon svg {
-        display: block;
-        
-    }
+.navigation-icon svg {
+    display: block;
+}
+
 .main-container {
     flex-grow: 1;
 }
@@ -228,7 +230,7 @@ margin: 0;
 }
 
 .free-gifts-article {
-    background-color: #FF7799;
+    background-color: #ff7799;
     border-radius: 16px;
     width: 570px;
     padding: 40px 15px 40px 40px;
@@ -240,20 +242,18 @@ margin: 0;
     font-weight: 700;
     width: 321px;
     margin: 0;
-    
 }
 
 .free-gifts-description {
     width: 321px;
     margin: 0;
-    
 }
 
 .free-gifts-link {
     padding: 0;
     padding: 12px 32px;
-
 }
+
 .product-title {
     width: 527px;
     margin-bottom: 107px;
@@ -276,11 +276,16 @@ margin: 0;
     font-weight: 700;
     line-height: 24px; 
     margin: 0px;
-    
-    }
-    .card-title {
-        margin-bottom: 8px;
-    }
+}
+
+.card-price-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin-bottom: 8px;
+}
 
 .product-card, .advantages-list, .new-article-title, .subscription-description, .delivery-description, .delivery-form-description, .contacts-address-title, .contacts-phone-title {
     color: #565C66;
@@ -290,17 +295,13 @@ margin: 0;
     margin: 0px;
 }
 
-}
 .card-title {
     text-align: center;
 }
 
 .card-description {
-    text-align: center;
-    width: 190px;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .card-image {
@@ -316,35 +317,31 @@ margin: 0;
 }
 
 .product-card {
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
+    padding: 0 40px 24px 40px;
     width: 270px;
-    
     border-radius: 8px;
 }
 
 .advantages {    
-    background-image: url("/images/background/waffle.jpg");
-    background-color: #FFFFFF;
+    background-image: url("../images/background/waffle.jpg");
+    background-color: #e1d4b3;
     width: 1170px;
     background-repeat: no-repeat;
-background-size: cover;
+    background-size: cover;
     border-radius: 16px; 
     padding: 24px;
 }
 
 .advantages-box {
-    background-color:  #FCFCFC;
+    background-color:  #fcfcfc;
     width: 1122px;
     padding: 56px 40px;
     border-radius: 16px;
-    
-    
-    
 }
 
 .advantages-title {
     width: 995px;
-    
 }
 
 .advantages-list {
@@ -370,7 +367,7 @@ background-size: cover;
     line-height: 20px;
     margin: 0;
     margin-bottom: 12px;
-    }
+}
 
 .new-article-link {
     display: inline-block;
@@ -380,12 +377,11 @@ background-size: cover;
     color: #2D3440;
     text-decoration: none;
     width: 303px;
-    
 }
 
 .new-article {
-    background-image: url("/images/background/ice-raspberry.jpg");
-    background-color: #FFFFFF;
+    background-image: url("../images/background/ice-raspberry.jpg");
+    background-color: #ffffff;
     color: #2D3440;
     width: 570px;
     border-radius: 16px;
@@ -396,8 +392,8 @@ background-size: cover;
 }
 
 .subscription {
-    background-image: url("/images/background/post.jpg");
-    background-color: #FFFFFF;
+    background-image: url("../images/background/post.jpg");
+    background-color: #ff2f68;
     width: 570px;
     border-radius: 16px;
     background-repeat: no-repeat;
@@ -406,27 +402,30 @@ background-size: cover;
 }
 
 .subscription-box {
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
     border-radius: 16px;
-    width: 558px;
-    min-height: 208px;
-    position: absolute;
     padding: 26px;
 }
 
 .subscription-description {
-    width: 506px;
-    height: 66px;
     margin: 0;
     margin-bottom: 42px;
 }
+
+.subscription-form-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription-email-box {
+    margin: 0;
+}
+
 .subscription-email {
     width: 332px;
     height: 48px;
-    margin: 0;
-    
     display: inline-block;
-    
 }
 
 .subscription-button, .modal-dialog {
@@ -435,18 +434,18 @@ background-size: cover;
     line-height: 20px;
     text-align: center;
     color: #FCFCFC;
-    background-color: #FF2F64;
+    background-color: #ff2f64;
     width: 152px;
     border-radius: 26px;
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border: 4px solid rgba(255, 47, 100, 0.3);
     background-clip: padding-box;
-    padding: 13px;
+    padding: 12px;
     }
 
 .delivery {
-    background-image: url("/images/background/ice-fruits-leaf.jpg");
-    background-color: #FFFFFF;
+    background-image: url("../images/background/ice-fruits-leaf.jpg");
+    background-color: #ffffff;
     color: #2D3440;
     width: 1170px;
     border-radius: 16px;
@@ -459,7 +458,6 @@ background-size: cover;
 .delivery-description-box {
     width: 371px;
     margin-top: 103px;
-    
 }
 
 .delivery-title {
@@ -470,7 +468,7 @@ background-size: cover;
 }
 
 .delivery-form{
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
     border-radius: 8px;
     width: 500px;
     margin-left: auto;
@@ -482,15 +480,9 @@ background-size: cover;
     margin: 0;
     margin-bottom: 32px;    
 }
-.delivery-form p:not(:first-child){
-  margin: 32px 0px;
+.delivery-form p:not(:first-child) {
+  margin: 32px 0;
 }
-
-.delivery-form .subscription-button {
-     
-    
-}
-
 
 .form-label label, .delivery-form-phone label {
     line-height: 20px;
@@ -499,43 +491,41 @@ background-size: cover;
 
 .delivery-form input, .subscription-form input {
     line-height: 20px;
-    color: #B9B9B9;
-    border: 1px solid #B9B9B9;
-    box-sizing: border-box;
+    color: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-radius: 4px;  
     padding: 14px 16px; 
 }
 
+.subscription-form input {
+    min-width: 332px;
+}
+
 .delivery-date {
-width: 117px;
-height: 48px;
+    width: 117px;
 }
 
 .delivery-phone {
     width: 287px;
-    height: 48px;  
 }
 
 .delivery-address {
     width: 420px;
-    height: 48px;
 }
 
 .contacts {
-    background-image: url("/images/background/three-ice.jpg");
-    background-color: #FFFFFF;
+    background-image: url("../images/background/three-ice.jpg");
+    background-color: #ede3e4;
     width: 1170px;
-   padding: 64px;
+    padding: 64px;
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
 .contacts-box {
     width: 343px;
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
     border-radius: 8px;
     padding: 40px;
 }
@@ -569,6 +559,7 @@ font-weight: 400;
 font-size: inherit;
 margin-bottom: 12px;
 }
+
 .contacts-schedule {
     font-size: 14px; 
     font-weight: 400;
@@ -580,8 +571,9 @@ margin-bottom: 12px;
 
 .modal-dialog {
     width: 250px;
-    
-    }
+    padding: 13px;
+}
+
 .page-footer {
     margin-top: 48px;
 }
@@ -590,7 +582,7 @@ margin-bottom: 12px;
     display: flex;
     width: 1170px;
     margin: 0 auto;
-   }
+}
 
 .social-icon-box {
     align-self: flex-end;
@@ -600,14 +592,13 @@ margin-bottom: 12px;
     margin: 0;
     padding: 0;
     display: flex;
-   
     flex-wrap: wrap;
     list-style-type: none;
     width: 105px;
 }
+
 .footer-social  .social-icon {
-      
-        margin-right: 300px;    
+    margin-right: 300px;    
 }
 
 .social-icon-item {
@@ -620,7 +611,6 @@ margin-bottom: 12px;
 .social-icon-item:nth-child(3n) {
     margin-right: 0;
 }
-
 
 .documents-list {
     margin: 0;
@@ -635,9 +625,10 @@ margin-bottom: 12px;
     font-size: 14px; 
     font-weight: 400;
     line-height: 20px;
-    color: #2D3440;
+    color: #2d3440;
     text-decoration: none;
 }
+
 .documents-link .document-bold {
     font-weight: 700;
 }
@@ -646,7 +637,6 @@ margin-bottom: 12px;
     width: 193px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .made-in-text {
@@ -656,7 +646,7 @@ margin-bottom: 12px;
 }
 
 .htmlacademy-link {
-    color: #2D3440;
+    color: #2d3440;
 }
 
 .main-inner {
@@ -674,7 +664,7 @@ margin-bottom: 12px;
     font-size: 14px; 
     font-weight: 700;
     line-height: 20px; 
-    color: #2D3440;
+    color: #2d3440;
     margin: 0;
     padding: 0;
 }
@@ -686,23 +676,25 @@ margin-bottom: 12px;
     display: flex;
     margin-bottom: 16px;
 }
+
 .breadcrumbs-link {
     padding: 0;
     padding-right: 28px;
-    
 }
+
 .catalog-filter {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    }
+}
+
 .catalog-filter-title {
-    margin-bottom: 8px;
-    }
+    margin-bottom: 8px; 
+}
+
 .catalog-name {
     text-align: left;
     margin: 0;
-    
     margin-bottom: 40px;
 }
 
@@ -713,7 +705,6 @@ margin-bottom: 12px;
     width: 196px;
     padding: 0;
     margin: 0;
-    
 }
 
 .catalog-filter-group:not(:first-child,:nth-child(4)) {
@@ -723,7 +714,6 @@ margin-bottom: 12px;
 .catalog-filter-group:last-child {
     margin-right: 24px;
 }
-
 
 .catalog-filter-item {
     list-style-type: none;
@@ -742,26 +732,31 @@ margin-bottom: 12px;
 
 .filter-fat {
     width: 367px;
- }
- .filter-add .catalog-filter-title {
-     margin-top: 16px;
- }
+}
+
+.filter-add .catalog-filter-title {
+    margin-top: 16px;
+}
 
  .filter-fat .catalog-filter-item:not(:last-child) {
-     margin-right: 40px;
- }
+    margin-right: 40px;
+}
+
  .filter-fat .catalog-filter-item:first-child {
-     margin-left: 40px;
- }
+    margin-left: 40px;
+}
 
 .filter-add {
     width: 596px;
     margin-right: 24px;
 }
+
 .filter-add .catalog-filter-item:not(:last-child) {
     margin-right: 40px;
 }
-.filter-add .catalog-filter-item:first-child,.catalog-filter-item:nth-child(6n) {
+
+.filter-add .catalog-filter-item:first-child,
+.catalog-filter-item:nth-child(6n) {
     margin-left: 40px;
 }
 
@@ -771,52 +766,58 @@ margin-bottom: 12px;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    
+    align-items: center;
+    margin-left: 303px;
 }
 
 .pagination-container {
-display: flex;
-margin-top: 16px;
-padding-top: 42px;
-padding-bottom: 42px;
-
-flex-direction: row-reverse;
+    display: flex;
+    margin-top: 16px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
-.pagination-item:not(:first-child,:last-child) {
+.pagination-prev svg {
+    display: block;
+}
+
+.pagination-next svg {
+    display: block;
+} 
+
+.pagination-item:not(:first-child,:last-child, :nth-child(6)) {
     margin-right: 8px;
 }
 
-
 .pagination-item:first-child {
-    margin-right: 30px;
+    margin-right: 16px;
 }
+
 .pagination-item:last-child {
-    margin-left: 30px;
+    margin-left: 24px;
 }
 
 .pagination-link {
-    color: #2D3440;
+    color: #2d3440;
     text-decoration: none;
 }
 
 .pagination-current {
-    color: #2D3440;
-    background-color: #FCFCFC;
-    border-radius: 50px;
+color: #2d3440;
+background-color: #fcfcfc;
+border-radius: 50px;
+padding: 2px 8px;
 }
 
 .pagination-show-more {
-
 font-size: 16px;
 padding: 12px 32px;
-background: #FCFCFC;
+background: #fcfcfc;
 border: 4px solid rgba(252, 252, 252, 0.4);
-box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 border-radius: 26px;
 background-clip: padding-box;
 }
-
 
