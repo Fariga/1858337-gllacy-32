@@ -66,31 +66,26 @@ body {
 }
 
 .page-header {
-  margin-top: 24px;
+  padding-top: 24px;
+  margin-bottom: 45px;
 }
 
 .header-container {
   display: flex;
   margin: 0 auto;
   width: 1170px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .navigation-logo {
   display: flex;
   align-items: center;
-  width: 137px;
   margin-right: 32px;
-}
-
-.navigation {
-  margin-top: 18px;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 520px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -112,17 +107,14 @@ body {
 .navigation-user-list {
   margin: 0;
   padding: 0;
-  max-width: 520px;
-  min-width: 419px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  margin-top: 12px;
   align-items: center;
 }
 
-.navigation-user-item:not(:first-child) {
+.navigation-user-item {
   margin-left: 16px;
 }
 
@@ -182,6 +174,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  margin-bottom: 48px;
 }
 
 .page-container {
@@ -192,17 +185,34 @@ body {
   gap: 80px;
 }
 
+.promo-slider-box {
+  display: flex;
+}
+
+.promo-slider-item {
+  padding-left: 70px;
+  padding-right: 2px;
+  padding-top: 115px;
+  padding-bottom: 138px;
+}
+
 .promo-slider-title {
+  margin: 0;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
-  width: 470px;
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .promo-slider-description {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
-  width: 414px;
+  max-width: 414px;
+  width: 100%;
+  padding-bottom: 48px;
 }
 
 .promo-slider-order-link,
@@ -214,9 +224,28 @@ body {
   color: #2d3440;
 }
 
+.promo-slider-image {
+  display: flex;
+  align-items: center;
+}
+
+.slider-image-sub1 {
+  margin-right: 41px;
+}
+
 .slider-pagination {
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.slider-pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-social-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .free-gifts-title,
@@ -255,13 +284,18 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  width: 321px;
   margin: 0;
+  margin-bottom: 16px;
 }
 
-.free-gifts-description {
-  width: 321px;
+.free-gifts-description-raspberry {
   margin: 0;
+  max-width: 321px;
+}
+
+.free-gifts-description-marshmallow {
+  margin: 0;
+  max-width: 294px;
 }
 
 .free-gifts-link {
@@ -269,7 +303,6 @@ body {
 }
 
 .product-title {
-  width: 527px;
   margin-bottom: 107px;
   margin-left: auto;
   margin-right: auto;
@@ -320,7 +353,7 @@ body {
 
 .card-description {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .card-image {
@@ -337,8 +370,9 @@ body {
 
 .product-card {
   background-color: #fcfcfc;
-  padding: 0 40px 28px 40px;
-  width: 270px;
+  padding: 0 40px 24px 40px;
+  max-width: 270px;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -354,13 +388,8 @@ body {
 
 .advantages-box {
   background-color: #fcfcfc;
-  width: 1122px;
   padding: 56px 40px;
   border-radius: 16px;
-}
-
-.advantages-title {
-  width: 995px;
 }
 
 .advantages-list {
@@ -370,8 +399,6 @@ body {
 }
 
 .advantages-description {
-  width: 442px;
-  height: 66px;
   margin: 0;
 }
 
@@ -402,7 +429,8 @@ body {
   background-image: url("../images/background/ice-raspberry.jpg");
   background-color: #ffffff;
   color: #2d3440;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,7 +441,8 @@ body {
 .subscription {
   background-image: url("../images/background/post.jpg");
   background-color: #ff2f68;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -472,12 +501,11 @@ body {
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 42px 42px 42px 100px;
+  padding: 64px 64px 64px 100px;
 }
 
 .delivery-description-box {
-  width: 371px;
-  margin-top: 103px;
+  padding: 103px 135px 163px 0;
 }
 
 .delivery-title {
@@ -490,13 +518,12 @@ body {
 .delivery-form {
   background-color: #fcfcfc;
   border-radius: 8px;
-  width: 500px;
   margin-left: auto;
   padding: 40px;
 }
 
 .delivery-form-description {
-  width: 380px;
+  max-width: 380px;
   margin: 0;
   margin-bottom: 32px;
 }
@@ -547,14 +574,14 @@ body {
 }
 
 .contacts-box {
-  width: 343px;
+  max-width: 343px;
   background-color: #fcfcfc;
   border-radius: 8px;
   padding: 40px;
 }
 
 .contacts-address-title {
-  width: 179px;
+  max-width: 179px;
   margin: 0;
   margin-bottom: 12px;
 }
@@ -565,12 +592,16 @@ body {
 }
 
 .contacts-address-text,
-.contacts-phone-text {
+.contacts-phone {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
+.contacts-phone {
+  color: inherit;
+  text-decoration: none;
+}
 
 .contacts-address-text {
   margin: 0;
@@ -598,14 +629,14 @@ body {
   padding: 13px;
 }
 
-.page-footer {
-  margin-top: 48px;
-}
-
 .page-footer-container {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+}
+
+.footer-social {
+  margin-right: 300px;
 }
 
 .social-icon-box {
@@ -618,17 +649,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 105px;
-}
-
-.footer-social .social-icon {
-  margin-right: 300px;
+  max-width: 105px;
+  width: 100%;
 }
 
 .social-icon-item {
-  width: 24px;
-  height: 24px;
   margin-right: 16px;
+}
+
+.footer-icon-item {
   margin-bottom: 8px;
 }
 
@@ -636,12 +665,16 @@ body {
   margin-right: 0;
 }
 
+.documents {
+  margin-right: 200px;
+}
+
 .documents-list {
   margin: 0;
   padding: 0;
-  width: 356px;
+  max-width: 356px;
+  width: 100%;
   list-style-type: none;
-  margin-right: 200px;
 }
 
 .documents-link {
@@ -657,7 +690,8 @@ body {
 }
 
 .made-in {
-  width: 193px;
+  max-width: 193px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -705,6 +739,7 @@ body {
 .breadcrumbs-link {
   padding: 0;
   padding-right: 28px;
+  color: inherit;
 }
 
 .catalog-filter {
