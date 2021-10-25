@@ -277,7 +277,8 @@ body {
   margin-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
-  width: 443px;
+  max-width: 443px;
+  width: 100%;
 }
 
 .free-gifts-article {
@@ -341,7 +342,8 @@ body {
   margin-bottom: 107px;
   margin-left: auto;
   margin-right: auto;
-  width: 530px;
+  max-width: 530px;
+  width: 100%;
 }
 
 .product-list {
@@ -512,7 +514,8 @@ body {
   line-height: 30px;
   color: #2d3440;
   text-decoration: none;
-  width: 303px;
+  max-width: 303px;
+  width: 100%;
 }
 
 .new-article {
