@@ -221,6 +221,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #2d3440;
+  display: inline-block;
 }
 
 .promo-slider-image {
@@ -277,15 +278,16 @@ body {
   justify-content: space-between;
   background-color: #ff7799;
   border-radius: 16px;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
 }
 
 .free-gifts-article-raspberry {
-  padding: 28px 15px 0 40px;
+  padding: 28px 15px 40px 40px;
 }
 
 .free-gifts-article-marshmallow {
-  padding: 19px 7px 0 40px;
+  padding: 19px 7px 40px 40px;
 }
 
 .free-gifts-article-title {
@@ -321,7 +323,7 @@ body {
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   background-clip: padding-box;
-  margin-bottom: 57px;
+  display: inline-block;
 }
 
 .product-title {
@@ -365,14 +367,7 @@ body {
   text-align: center;
 }
 
-.product-card,
-.advantages-list,
-.new-article-title,
-.subscription-description,
-.delivery-description,
-.delivery-form-description,
-.contacts-address-title,
-.contacts-phone-title {
+.color-primary-text {
   color: #565c66;
 }
 
@@ -545,6 +540,7 @@ body {
 
 .subscription-email {
   width: 332px;
+  font-size: inherit;
 }
 
 .subscription-button,
@@ -634,14 +630,17 @@ body {
 
 .delivery-date {
   width: 117px;
+  font-size: inherit;
 }
 
 .delivery-phone {
   width: 287px;
+  font-size: inherit;
 }
 
 .delivery-address {
   width: 420px;
+  font-size: inherit;
 }
 
 .delivery-form-address {
@@ -741,23 +740,11 @@ body {
 .social-icon {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
-  max-width: 105px;
-  width: 100%;
-}
-
-.social-icon-item {
-  margin-right: 16px;
-}
-
-.footer-icon-item {
-  margin-bottom: 8px;
-}
-
-.social-icon-item:nth-child(3n) {
-  margin-right: 0;
+  display: grid;
+  grid-template-columns: 24px 24px 24px;
+  column-gap: 16px;
+  row-gap: 5px;
 }
 
 .documents {
