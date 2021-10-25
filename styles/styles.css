@@ -67,7 +67,7 @@ body {
 
 .page-header {
   padding-top: 24px;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .header-container {
@@ -176,12 +176,13 @@ body {
   flex-grow: 1;
 }
 
-.page-container {
-  margin: 0 auto;
+.slider-block-wrapper{
+  padding-bottom: 80px;
+}
+
+.slider-block {
   width: 1170px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  margin: 0 auto;
 }
 
 .promo-slider-box {
@@ -261,16 +262,22 @@ body {
   margin-bottom: 0;
 }
 
+.free-gifts {
+  padding-bottom: 80px;
+}
+
 .free-gifts-box {
   display: flex;
   justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .free-gifts-title {
-  width: 443px;
   margin-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
+  width: 443px;
 }
 
 .free-gifts-article {
@@ -326,10 +333,15 @@ body {
   display: inline-block;
 }
 
+.product {
+  padding-bottom: 80px;
+}
+
 .product-title {
   margin-bottom: 107px;
   margin-left: auto;
   margin-right: auto;
+  width: 530px;
 }
 
 .product-list {
@@ -341,6 +353,8 @@ body {
   padding: 0;
   list-style-type: none;
   text-align: center;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .product-list-catalog {
@@ -417,6 +431,10 @@ body {
   border: 1px;
 }
 
+.advantages-wrapper {
+  padding-bottom:80px;
+}
+
 .advantages {
   background-image: url("../images/background/waffle.jpg");
   background-color: #e1d4b3;
@@ -424,6 +442,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  margin:0 auto;
   padding: 24px;
 }
 
@@ -467,9 +486,15 @@ body {
   margin: 0;
 }
 
+.new-article-subscription-box-wrapper{
+  padding-bottom: 80px;
+}
+
 .new-article-subscription-box {
   display: flex;
   justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .new-article-title {
@@ -559,6 +584,11 @@ body {
   padding: 12px;
 }
 
+.delivery-wrapper {
+  padding-bottom: 80px;
+}
+
+
 .delivery {
   background-image: url("../images/background/ice-fruits-leaf.jpg");
   background-color: #ffffff;
@@ -569,6 +599,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 64px 64px 64px 100px;
+  margin: 0 auto;
 }
 
 .delivery-description-box {
@@ -660,6 +691,7 @@ body {
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .contacts-box {
@@ -799,15 +831,13 @@ body {
 
 .main-inner {
   margin-bottom: 81px;
-}
-
-.main-inner-container {
-  margin: 0 auto;
-  width: 1170px;
   display: flex;
   flex-direction: column;
 }
 
+.breadcrumbs-wrapper{
+  margin-bottom: 16px;
+}
 .breadcrumbs,
 .button,
 .pagination-show-more {
@@ -820,12 +850,12 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  margin-bottom: 16px;
   padding-top: 11px;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .breadcrumbs-link {
@@ -834,6 +864,10 @@ body {
   color: inherit;
 }
 
+.catalog {
+  width: 1170px;
+  margin: 0 auto;
+}
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
