@@ -80,7 +80,7 @@ body {
 .navigation-logo {
   display: flex;
   align-items: center;
-  margin-right: 32px;
+  margin-right: 18px;
 }
 
 .navigation-list {
@@ -211,19 +211,32 @@ body {
 .slider-block {
   width: 1170px;
   margin: 0 auto;
+  position: relative;
 }
 
 .promo-slider-box {
   display: flex;
 }
 
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 350px;
+  transform: translateY(calc(-50% - 12px));
+  display: flex;
+  justify-content: space-between;
+  z-index: 11;
+  left: 541px;
+}
+
 .promo-slider-item {
   padding-left: 70px;
   padding-right: 2px;
   padding-top: 115px;
-  padding-bottom: 138px;
+  padding-bottom: 110px;
   max-width: 542px;
   width: 100%;
+  margin-right: 21px;
 }
 
 .promo-slider-title {
@@ -238,7 +251,7 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 48px;
+  padding-bottom: 44px;
   padding-right: 56px;
 }
 
@@ -292,6 +305,7 @@ body {
   position: relative;
   z-index: 10;
   margin-right: 56px;
+  margin-right: 79px;
 }
 
 .slider-image-parent-big::after {
@@ -301,7 +315,6 @@ body {
   position: absolute;
   top: calc(50% - 312px/2);
   left: calc(50% - 312px/2);
-
   z-index: -1;
   background-color: #FFCBD8;
   border-radius: 50%;
@@ -313,7 +326,8 @@ body {
   z-index: 10;
 }
 
-.slider-image-parent-sub::after {
+.slider-image-parent-sub1::after,
+.slider-image-parent-sub2::after {
   content: '';
   width: 100px;
   height: 100px;
@@ -327,7 +341,7 @@ body {
 }
 
 .slider-image-parent-sub1 {
-  margin-right: 41px;
+  margin-right: 75px;
 }
 
 
@@ -376,7 +390,6 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-
 }
 
 .slider-pagination-item {
@@ -409,7 +422,7 @@ cursor: pointer;
   border: 1px solid #2d3440;
 }
 
-.pagination-social-box {
+.pagination-social-box-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -437,11 +450,11 @@ cursor: pointer;
 }
 
 .free-gifts-article-marshmallow .free-gifts-text-box {
-  width: 295px;
+  width: 299px;
 }
 
 .free-gifts-article-raspberry .free-gifts-text-box {
-  width: 321px;
+  width: 326px;
 }
 
 .free-gifts-box {
@@ -468,15 +481,13 @@ cursor: pointer;
 }
 
 .free-gifts-article-raspberry {
-  padding: 28px 15px 40px 40px;
-
+  padding: 40px 15px 36px 36px;
   background-image: url(../images/raspberry.png);
-
-background-position: bottom 0 right 15px;
+  background-position: bottom 0 right 15px;
 }
 
 .free-gifts-article-marshmallow {
-  padding: 19px 7px 40px 40px;
+  padding: 40px 7px 36px 36px;
   background-image: url(../images/marshmallow.png);
 
 background-position: bottom 0 right 7px;
@@ -488,24 +499,20 @@ background-position: bottom 0 right 7px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 16px;
+  margin-left: 4px;
 }
 
-.free-gifts-title-raspberry {
-  margin-top: 12px;
-}
-
-.free-gifts-title-marshmallow {
-  margin-top: 21px;
-}
 
 .free-gifts-description-raspberry {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+  margin-left: 4px;
 }
 
 .free-gifts-description-marshmallow {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+  margin-left: 4px;
 }
 
 .free-gifts-link {
