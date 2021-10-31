@@ -97,73 +97,65 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
             <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" name="sorting" id="sorting">
-              <option value="popular">по популярности</option>
-              <option value="cheap">сначала дешевые</option>
-              <option value="expensive">сначала дорогие</option>
-            </select>
+            <div class="select-control-wrapper">
+              <select class="select-control" name="sorting" id="sorting">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала дешевые</option>
+                <option value="expensive">сначала дорогие</option>
+              </select>
+            </div>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+          <fieldset class="catalog-filter-group filter-price">
+            <div class="range-wrapper-inputs">
+              <legend class="catalog-filter-title">Цена:</legend>
+              <label class="catalog-filter-label">
+                <input class="catalog-filter-input" type="number" name="min-price" value="100"> ₽
+              </label>
+              <label class="catalog-filter-label">– <input class="catalog-filter-input" type="number" name="max-price"
+                  value="500"> ₽
+              </label>
+            </div>
             <div class="range">
               <div class="range-scale">
-                <div class="range-bar" style="left: 24px; width: 56px">
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену</span>
-              <span class="range-toggle-circle">
-                <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle class="big" cx="8" cy="8" r="8" />
-                  <circle class="small" cx="8" cy="8" r="2" />
-                </svg>
-              </span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену</span>
-              <span class="range-toggle-circle">
-                <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle class="big" cx="8" cy="8" r="8"/>
-                  <circle class="small" cx="8" cy="8" r="2"/>
-                </svg>
-              </span>
-            </button>
-               </div>
+                <div class="range-bar" style="left: 32px; width: 68px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
               </div>
-              <div class="range-wrapper-inputs">
-            <label class="catalog-filter-label">
-              <input class="catalog-filter-input" type="number" name="min-price">
-            </label>
-            <label class="catalog-filter-label">
-              <input class="catalog-filter-input" type="number" name="max-price">
-            </label>
-            </div>
             </div>
           </fieldset>
           <fieldset class="catalog-filter-group filter-fat">
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item-radio">
                 <label class="control">
                   <input class="visually-hidden control-input" name="fatness" value="0%" type="radio">
+                  <span class="control-mark"></span>
                   <span class="control-label">0%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item-radio">
                 <label class="control">
                   <input class="visually-hidden control-input" name="fatness" value="to 10%" type="radio" checked>
+                  <span class="control-mark"></span>
                   <span class="control-label">до 10%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item-radio">
                 <label class="control">
                   <input class="visually-hidden control-input" name="fatness" value="to 30%" type="radio">
+                  <span class="control-mark"></span>
                   <span class="control-label">до 30%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-item-radio">
                 <label class="control">
                   <input class="visually-hidden control-input" name="fatness" value="over 30%" type="radio">
+                  <span class="control-mark"></span>
                   <span class="control-label">выше 30%</span>
                 </label>
               </li>
@@ -175,36 +167,43 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="шоколадные" checked>
+                  <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="сахарные присыпки" checked>
-                  <span class="control-label">сахарные присыпки</span>
+                  <span class="control-mark"></span>
+                  <span class="control-label">сахарные посыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="фрукты">
+                  <span class="control-mark"></span>
                   <span class="control-label">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="сиропы">
+                  <span class="control-mark"></span>
                   <span class="control-label">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="джемы">
+                  <span class="control-mark"></span>
                   <span class="control-label">джемы</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button catalog-filter-group-button" type="submit">Применить</button>
+          <div class="catalog-filter-group-button-wrapper">
+            <button class="button catalog-filter-group-button" type="submit">Применить</button>
+          </div>
         </form>
         <ul class="product-list product-list-catalog">
           <li class="product-card color-primary-text">
@@ -627,10 +626,10 @@
             </a>
           </li>
           <li class="document-item">
-            <a class="documents-link" href="#">О производстве</a>
+            <a class="documents-link" href="#">Наши документы</a>
           </li>
           <li class="document-item">
-            <a class="documents-link" href="#">Наши документы</a>
+            <a class="documents-link" href="#">О производстве</a>
           </li>
           <li class="document-item">
             <a class="documents-link" href="#">Экологические стандарты</a>

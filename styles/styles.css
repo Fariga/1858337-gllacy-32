@@ -80,7 +80,7 @@ body {
 .navigation-logo {
   display: flex;
   align-items: center;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .navigation-list {
@@ -554,7 +554,7 @@ background-position: bottom 0 right 7px;
 }
 
 .product-list-catalog {
-  margin-bottom: 57px;
+  margin-bottom: 53px;
 }
 
 .card-title,
@@ -594,8 +594,7 @@ background-position: bottom 0 right 7px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -59px;
-  margin-bottom: 8px;
+  margin-top: -51px;
 }
 
 .product-card-link {
@@ -1069,7 +1068,7 @@ background-position: bottom 0 right 7px;
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  padding-top: 48px;
+  padding-top: 45px;
 }
 
 .page-footer-container-line {
@@ -1144,12 +1143,16 @@ background-position: bottom 0 right 7px;
   margin: 0;
 }
 
+.made-in-htmlacademy {
+  margin-bottom: 10px;
+}
+
 .htmlacademy-link {
   color: #2d3440;
 }
 
 .main-inner {
-  margin-bottom: 81px;
+  margin-bottom: 77px;
   display: flex;
   flex-direction: column;
 }
@@ -1197,11 +1200,12 @@ background-position: center left 66px;
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 83px;
 }
 
 .catalog-filter-title {
   margin-bottom: 8px;
+  padding-left: 14px;
 }
 
 .catalog-name {
@@ -1217,11 +1221,30 @@ background-position: center left 66px;
   padding: 0;
   margin: 0;
   border: 0;
+  margin-bottom: 16px;
+}
+
+.select-control-wrapper {
+  display: flex;
+  width: 196px;
+  align-items: center;
+  margin-right: auto;
 }
 
 .select-control {
   background-color: rgba(252, 252, 252, 0.3);
+  border-color: transparent;
   border-radius: 20px;
+  width: 100%;
+  padding: 6px 10px;
+  padding-right: 48px;
+  font: inherit;
+  font-weight:400;
+  color: #2d3440;
+  appearance: none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
 }
 
 .select-control:hover {
@@ -1232,10 +1255,6 @@ background-position: center left 66px;
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.4);
   border: 2px solid #fcfcfc;
-}
-
-.select-control option {
-  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-group:not(:first-child,:nth-child(4)) {
@@ -1250,6 +1269,23 @@ background-position: center left 66px;
   list-style-type: none;
 }
 
+.catalog-filter-item:not(:last-child,:nth-child(2)) {
+  padding-right: 17px;
+}
+
+.catalog-filter-item:nth-child(2) {
+  padding-right: 25px;
+}
+
+.catalog-filter-item-radio {
+  list-style-type: none;
+}
+
+.catalog-filter-item-radio:not(:last-child) {
+  padding-right: 17px;
+}
+
+
 .catalog-filter-list {
   display: flex;
   margin: 0;
@@ -1260,9 +1296,9 @@ background-position: center left 66px;
 }
 
 .range {
-  background: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
-  padding: 10px 16px;
+  padding: 17px 16px;
 }
 
 .range-scale {
@@ -1270,6 +1306,7 @@ background-position: center left 66px;
   height: 2px;
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
+  width: 100%;
 }
 
 .range-bar {
@@ -1280,41 +1317,33 @@ background-position: center left 66px;
 
 .range-toggle {
   position: absolute;
-  cursor: pointer;
-  border: 0px;
-  padding: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #fcfcfc;
+  border: 6px solid #2D3440;
   border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
 }
 
-.big {
-  fill: #2d3440;
+.range-toggle:hover,
+.range-toggle:focus {
+  background-color: #2D3440;
+  border: 6px solid #fcfcfc;
 }
 
-.small {
-  fill: #fcfcfc;
+.range-toggle:active {
+  background-color: #2D3440;
+  border: none;
 }
 
-.range-toggle .big:hover,
-.range-toggle .big:focus {
-  fill: #fcfcfc;
-}
-
-.range-toggle .small:hover,
-.range-toggle .big:focus {
-  fill: #2d3440;
-}
-
-circle:active {
-  fill: #2d3440;
-}
-
-circle:focus {
+.range-toggle:focus {
   outline: 2px solid #2D3440;
 }
 
 .toggle-min {
   top: -8px;
-  right: -10px;
+  left: -10px;
 }
 
 .toggle-max {
@@ -1324,11 +1353,10 @@ circle:focus {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
 }
 
 .catalog-filter-label {
-  display: flex;
+  margin-right: 5px;
 }
 
 .catalog-filter-input {
@@ -1339,6 +1367,8 @@ circle:focus {
   background-color: transparent;
   border: none;
   appearance: textfield;
+  font-family: "inter", sans-serif;
+  color: #2d3440;
 }
 
 .catalog-filter-input::-webkit-outer-spin-button,
@@ -1347,34 +1377,81 @@ circle:focus {
   margin: 0;
 }
 
-.filter-fat .catalog-filter-item:not(:last-child) {
-  margin-right: 40px;
+.filter-price {
+  width: 196px;
 }
 
-.filter-fat .catalog-filter-item:first-child {
-  margin-left: 40px;
+
+.catalog-filter-group-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 16px;
 }
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.33333px solid #2D3440;
+}
+
+.control:hover .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control:hover .control-input[type="radio"]:checked + .control-mark::before {
+  background-color: #FCFCFC;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: rgba(86, 92, 102, 0.3);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #2D3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:disabled + .control-mark::before {
+  background-color: rgba(86, 92, 102, 0.3);
+}
+
+.control:hover .control-input[type="radio"]:disabled + .control-mark::before {
+  background-color: rgba(86, 92, 102, 0.3);
+}
+
 
 .filter-add {
-  margin-right: 24px;
-}
-
-.filter-add .catalog-filter-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.filter-add .catalog-filter-item:first-child,
-.catalog-filter-item:nth-child(6n) {
-  margin-left: 40px;
+  margin-right: 22px;
 }
 
 .catalog-filter-group-button {
-  padding: 8px 54px;
+  padding: 8px 53px;
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   border-radius: 20px;
   cursor: pointer;
   background-clip: padding-box;
+  font-family: "inter", sans-serif;
 }
 
 .catalog-filter-group-button:hover {
