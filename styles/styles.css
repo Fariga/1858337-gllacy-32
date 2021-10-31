@@ -887,13 +887,14 @@ background-position: bottom 0 right 7px;
   margin: 0;
   display: flex;
   flex-direction: column;
+
 }
 
 .delivery-form {
   background-color: #fcfcfc;
   border-radius: 8px;
   margin-left: auto;
-  padding: 40px;
+  padding: 40px 40px 38px 40px;
 }
 
 .delivery-form-description {
@@ -909,13 +910,69 @@ background-position: bottom 0 right 7px;
   margin-bottom: 8px;
 }
 
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+.info {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .delivery-form input,
 .subscription-form input {
   line-height: 20px;
-  color: #b9b9b9;
+
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding: 14px 16px;
+}
+
+.field {
+  font-size: inherit;
+}
+
+.field:hover {
+  border: 1px solid #2D3440;
+  cursor: pointer;
+  color: #2D3440;
+}
+
+.field:focus {
+  outline: 2px solid #2D3440;
+  color: #2D3440;
+}
+
+.field:disabled,
+.field:disabled:hover {
+  background-color: #E7E7E7;
+}
+
+.field:disabled {
+  color: #2D3440;
+  opacity: 0.65;
+}
+.field:disabled:hover {
+  color: #2D3440;
+}
+
+.field:invalid {
+  border: 1px solid #EA5454;
+}
+
+.field:focus:invalid {
+  outline: 2px solid #EA5454;
+}
+
+.field::placeholder {
+  color: #b9b9b9;
 }
 
 .subscription-form input {
@@ -923,22 +980,16 @@ background-position: bottom 0 right 7px;
 }
 
 .delivery-date {
-  width: 117px;
-  font-size: inherit;
+  grid-column: 1/2;
 }
 
 .delivery-phone {
-  width: 287px;
-  font-size: inherit;
-}
-
-.delivery-address {
-  width: 420px;
-  font-size: inherit;
+  grid-column: 2/3;
 }
 
 .delivery-form-address {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  grid-column: 1/-1;
 }
 
 .subscription-button {
@@ -1137,7 +1188,6 @@ li:not(:last-of-type) .breadcrumbs-link {
 background-size: 12px 12px;
 background-repeat: no-repeat;
 background-position: center left 66px;
-
 }
 
 .catalog {
@@ -1166,11 +1216,22 @@ background-position: center left 66px;
   line-height: 20px;
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
 .select-control {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+}
+
+.select-control:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
+}
+
+.select-control:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 2px solid #fcfcfc;
 }
 
 .select-control option {
@@ -1196,6 +1257,94 @@ background-position: center left 66px;
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 16px;
+}
+
+.range {
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  padding: 10px 16px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: rgba(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: rgb(86, 92, 102);
+}
+
+.range-toggle {
+  position: absolute;
+  cursor: pointer;
+  border: 0px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.big {
+  fill: #2d3440;
+}
+
+.small {
+  fill: #fcfcfc;
+}
+
+.range-toggle .big:hover,
+.range-toggle .big:focus {
+  fill: #fcfcfc;
+}
+
+.range-toggle .small:hover,
+.range-toggle .big:focus {
+  fill: #2d3440;
+}
+
+circle:active {
+  fill: #2d3440;
+}
+
+circle:focus {
+  outline: 2px solid #2D3440;
+}
+
+.toggle-min {
+  top: -8px;
+  right: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+}
+
+.catalog-filter-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .filter-fat .catalog-filter-item:not(:last-child) {
