@@ -267,6 +267,7 @@ body {
   border-radius: 26px;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .order-link:hover,
@@ -354,6 +355,11 @@ cursor: pointer;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+.slider-button-next,
+.slider-button-prev {
+  display: flex;
 }
 
 .icon-pagination {
@@ -1049,11 +1055,6 @@ background-position: bottom 0 right 7px;
   margin-bottom: 32px;
 }
 
-.modal-dialog {
-  width: 250px;
-  padding: 13px;
-}
-
 .page-footer-container {
   display: flex;
   width: 1170px;
@@ -1151,8 +1152,7 @@ background-position: bottom 0 right 7px;
   margin-bottom: 16px;
 }
 .breadcrumbs,
-.button,
-.pagination-show-more {
+.button {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -1543,15 +1543,19 @@ background-position: center left 66px;
   border: 1px solid #2d3440;
 }
 
-.pagination-show-more {
-  font-size: 16px;
-  padding: 12px 32px;
-  background: #fcfcfc;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border-radius: 26px;
-  background-clip: padding-box;
+.button-show-more {
   cursor: pointer;
   margin: 0 auto;
+  border: none;
   font-family: "inter", sans-serif;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
 }
