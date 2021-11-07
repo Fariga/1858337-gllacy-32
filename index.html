@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Gllacy Shop</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -69,11 +70,11 @@
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="popover-form-field">
                 <label class="visually-hidden" for="popover-search">Поиск по сайту</label>
-                <input class="field-form popover-text field-form-search" type="text" id="popover-search" name="search"
+                <input class="field-form popover-text field-form-search" id="popover-search" type="text" name="search"
                   placeholder="Поиск по сайту" required>
                 <button type="reset" class="popover-cross">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="popover-cross-icon">
+                  <svg class="popover-cross-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
                   </svg>
@@ -99,13 +100,13 @@
               <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="popover-form-field-email">
                   <label class="visually-hidden" for="user-email">электронная почта</label>
-                  <input class="field-form popover-text" type="text" id="user-email" name="user-email" required
-                    placeholder="email@example.com">
+                  <input class="field-form popover-text" id="user-email" type="text" name="user-email"
+                    placeholder="email@example.com" required>
                 </p>
                 <p class="popover-form-field-password">
                   <label class="visually-hidden" for="user-password">пароль</label>
-                  <input class="field-form popover-text" type="password" id="popover-password" name="user-password"
-                    required placeholder="Ваш пароль">
+                  <input class="field-form popover-text" type="password" id="user-password" name="user-password"
+                    placeholder="Ваш пароль" required>
                 </p>
                 <div class="account-links">
                   <button class="subscription-button enter-button" type="submit">Войти</button>
@@ -148,9 +149,9 @@
       <div class="slider-block">
         <article class="promo-slider-box">
           <div class="promo-slider-item">
-            <h2 class="promo-slider-title">Нежный пломбир с клубничным джемом</h2>
-            <p class="promo-slider-description">Натуральное мороженое из свежих сливок
-              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+            <h2 class="promo-slider-title">Нежный пломбир<br> с клубничным джемом</h2>
+            <p class="promo-slider-description">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим
+              клубничным джемом – это идеальный десерт для всей семьи. </p>
             <a class="order-link" href="catalog.html">Заказать</a>
           </div>
           <div class="promo-slider-image">
@@ -168,7 +169,7 @@
             </div>
           </div>
         </article>
-        <article class="promo-slider-box visually-hidden">
+        <article class="promo-slider-box  visually-hidden" >
           <div class="promo-slider-item">
             <h2 class="promo-slider-title">Сливочное мороженое со вкусом банана</h2>
             <p class="promo-slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
@@ -192,8 +193,8 @@
         </article>
         <article class="promo-slider-box visually-hidden">
           <div class="promo-slider-item">
-            <h2 class="promo-slider-title">Карамельный пломбир с маршмеллоу</h2>
-            <p class="promo-slider-description">Необычный сладкий дессерт с карамельный топпингом и кусочками зефира
+            <h2 class="promo-slider-title">Карамельный пломбир<br>с маршмеллоу</h2>
+            <p class="promo-slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
               завоюет
               сердца сладкоежек всех возрастов.</p>
             <a class="order-link" href="catalog.html">Заказать</a>
@@ -259,37 +260,31 @@
               <li class="social-icon-item">
                 <a class="button social-icon-anchor" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
-
                   <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" />
                   </svg>
-
                 </a>
               </li>
               <li class="social-icon-item">
                 <a class="button social-icon-anchor" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
-
                   <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.57.9H13V18h-2.29v-5.1H9v-2.4h1.71V8.82c0-1.83 1.1-2.82 2.66-2.82.74 0 1.44.06 1.63.08V8.1h-.86C13 8.1 13 8.68 13 9.3v1.2h2l-.57 2.4Z" />
                   </svg>
-
                 </a>
               </li>
               <li class="social-icon-item">
                 <a class="button social-icon-anchor" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Интаграм</span>
-
                   <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.53-5.96C13.83 6 13.63 6 12 6c-1.63 0-1.83 0-2.47.04-.64.03-1.08.13-1.46.28-.4.15-.76.38-1.06.69-.3.3-.54.66-.7 1.06-.14.38-.24.82-.27 1.46C6 10.17 6 10.37 6 12c0 1.63 0 1.83.04 2.47.03.64.13 1.08.28 1.46.15.4.38.76.69 1.06.3.3.66.54 1.06.7.38.14.82.24 1.46.27.64.03.84.04 2.47.04 1.63 0 1.83 0 2.47-.04a4.43 4.43 0 0 0 1.46-.28c.4-.15.76-.38 1.06-.69.3-.3.54-.66.7-1.06.14-.38.24-.82.27-1.46.03-.64.04-.84.04-2.47 0-1.63 0-1.83-.04-2.47a4.43 4.43 0 0 0-.28-1.46c-.15-.4-.38-.76-.69-1.06a2.93 2.93 0 0 0-1.06-.7 4.42 4.42 0 0 0-1.46-.27Zm-4.6 3.84a3 3 0 1 1 4.25 4.24 3 3 0 0 1-4.24-4.24Zm5.81-1.56a.75.75 0 1 1-1.06 1.06.75.75 0 0 1 1.06-1.06Zm-2.4 2.4a1.8 1.8 0 1 0-2.55 2.55 1.8 1.8 0 0 0 2.54-2.54Z" />
                   </svg>
-
                 </a>
               </li>
             </ul>
@@ -304,18 +299,16 @@
           <article class="free-gifts-article free-gifts-article-raspberry">
             <div class="free-gifts-text-box">
               <h3 class="free-gifts-article-title free-gifts-title-raspberry">Малинка даром!</h3>
-              <p class="free-gifts-description-raspberry">При покупке 2 кг любого фруктового мороженого, добавим в ваш
-                заказ банку
-                малинового варенья бесплатно.</p>
+              <p class="free-gifts-description-raspberry">При покупке 2 кг любого фруктового мороженого добавим в ваш
+                заказ банку малинового варенья бесплатно.</p>
               <a class="order-link" href="#">Хочу подарок</a>
             </div>
           </article>
           <article class="free-gifts-article free-gifts-article-marshmallow">
             <div class="free-gifts-text-box">
               <h3 class="free-gifts-article-title free-gifts-title-marshmallow">Маршмеллоу даром!</h3>
-              <p class="free-gifts-description-marshmallow">При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-                нежных<br> зефирок
-                совершенно бесплатно.</p>
+              <p class="free-gifts-description-marshmallow">При покупке 2 кг пломбира добавим в ваш заказ упаковку
+                нежных зефирок совершенно бесплатно.</p>
               <a class="order-link" href="#">Хочу подарок</a>
             </div>
           </article>
@@ -384,7 +377,7 @@
                 height="184">
               <h3 class="card-title">Черника</h3>
             </a>
-            <p class="card-description">Крем-брюле с черничным джемом</p>
+            <p class="card-description">Крем-брюле<br> с черничным джемом</p>
             <div class="card-price-box">
               <span class="visually-hidden">
                 Цена
@@ -410,7 +403,7 @@
                 height="184">
               <h3 class="card-title">Бабл-гам</h3>
             </a>
-            <p class="card-description">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="card-description">Ванильный пломбир<br> со сладкой посыпкой</p>
             <div class="card-price-box">
               <span class="visually-hidden">
                 Цена
@@ -436,12 +429,12 @@
     <div class="advantages-wrapper">
       <article class="advantages">
         <div class="advantages-box">
-          <h2 class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-            производства на развес</h2>
+          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
+            проиводства на развес</h2>
           <ul class="advantages-list color-primary-text">
             <li class="advantages-item">
               <span class="advantages-icon-ice advantages-icon-circle">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="34" height="34" viewBox="0 0 34 34" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16 0C14.042 0.00226696 12.1526 0.721694 10.689 2.02231C9.22536 3.32294 8.28885 5.11465 8.05647 7.05882H8V22.9459H24V7.05882H23.9435C23.7111 5.11465 22.7746 3.32294 21.311 2.02231C19.8474 0.721694 17.958 0.00226696 16 0ZM22.1176 21.0635H9.88235V12.3859C10.0569 12.5964 10.2801 12.7612 10.5326 12.8662C10.7851 12.9711 11.0594 13.013 11.3318 12.9882C12.5459 12.9882 13.3365 12.3106 13.3365 11.4541V10.6353C13.3242 10.5223 13.3359 10.408 13.3708 10.2998C13.4057 10.1917 13.4629 10.0921 13.5388 10.0075C13.6147 9.92291 13.7076 9.85527 13.8114 9.80897C13.9152 9.76266 14.0275 9.73873 14.1412 9.73873C14.2548 9.73873 14.3672 9.76266 14.471 9.80897C14.5748 9.85527 14.6676 9.92291 14.7435 10.0075C14.8195 10.0921 14.8767 10.1917 14.9116 10.2998C14.9464 10.408 14.9581 10.5223 14.9459 10.6353V13.7318C14.949 13.9809 15.0049 14.2266 15.1101 14.4525C15.2152 14.6784 15.3671 14.8794 15.5557 15.0422C15.7443 15.205 15.9654 15.326 16.2042 15.397C16.443 15.468 16.6942 15.4875 16.9412 15.4541C17.1822 15.4885 17.4278 15.4721 17.6622 15.4062C17.8966 15.3402 18.1146 15.2261 18.3024 15.0711C18.4902 14.9161 18.6436 14.7236 18.7528 14.5059C18.8619 14.2883 18.9245 14.0503 18.9365 13.8071V11.7271C18.9213 11.5516 18.9428 11.375 18.9996 11.2083C19.0563 11.0417 19.1471 10.8886 19.2661 10.7589C19.3851 10.6291 19.5298 10.5255 19.691 10.4547C19.8521 10.3838 20.0263 10.3472 20.2024 10.3472C20.3784 10.3472 20.5526 10.3838 20.7137 10.4547C20.8749 10.5255 21.0196 10.6291 21.1386 10.7589C21.2576 10.8886 21.3484 11.0417 21.4052 11.2083C21.4619 11.375 21.4834 11.5516 21.4682 11.7271C21.4651 11.7552 21.4651 11.7836 21.4682 11.8118C21.492 11.994 21.5626 12.1669 21.6731 12.3137C21.7836 12.4605 21.9303 12.5762 22.0988 12.6494V21.12L22.1176 21.0635Z"
@@ -463,9 +456,8 @@
                     fill="#2D3440" />
                 </svg>
               </span>
-              <p class="advantages-description">Закупка ингредиентов производится только
-                у проверенных фермерских хозяйств, с которыми
-                нас связывает долговременное сотрудничество.</p>
+              <p class="advantages-description">Закупка ингредиентов производится только<br>у проверенных фермерских
+                хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="advantages-item">
               <span class="advantages-icon-leaf advantages-icon-circle">
@@ -477,7 +469,7 @@
                 </svg>
               </span>
               <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
-                качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+                качества. Все ингредиенты<br>и добавки произведены из натурального сырья.</p>
             </li>
             <li class="advantages-item">
               <span class="advantages-icon-thermometer advantages-icon-circle">
@@ -496,8 +488,7 @@
                 </svg>
               </span>
               <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке,
-                который
-                не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </div>
@@ -507,23 +498,22 @@
       <div class="new-article-subscription-box">
         <article class="new-article">
           <h2 class="new-article-title color-primary-text">Новое в нашем блоге</h2>
-          <a class="new-article-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="new-article-link" href="#">10 способов сервировки фруктовых щербетов<br> к столу</a>
         </article>
         <section class="subscription">
           <div class="subscription-box">
             <h2 class="visually-hidden">Подписаться на рассылку</h2>
-            <p class="subscription-description color-primary-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+            <p class="subscription-description color-primary-text">Подпишитесь на нашу сладкую рассылку и будьте
+              всегда<br>
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
               Честно =)</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-
               <p class="subscription-email-box">
                 <label class="visually-hidden" for="subscription-email"></label>
-                <input class="field-form email-field" type="text" id="subscription-email" name="subscription-form-email"
+                <input class="field-form email-field" id="subscription-email" type="text" name="subscription-form-email"
                   placeholder="email@example.com" required>
               </p>
               <button class="subscription-button" type="submit">Отправить</button>
-
             </form>
           </div>
         </section>
@@ -551,12 +541,12 @@
                 </button>
                 <span class="tooltip">Введите&nbsp;желаемую дату</span>
               </span>
-              <input class="delivery-date field-form" type="text" name="delivery-date" id="delivery-date"
+              <input class="delivery-date field-form" id="delivery-date" type="text" name="delivery-date"
                 placeholder="01.04.2020">
             </p>
             <p class="field-group delivery-form-phone">
               <label class="delivery-phone-text" for="delivery-phone">Телефон</label>
-              <input class="delivery-phone field-form" type="text" name="delivery-phone" id="delivery-phone"
+              <input class="delivery-phone field-form" id="delivery-phone" type="text" name="delivery-phone"
                 placeholder="+7 800 999-00-00" required>
             </p>
             <p class="field-group delivery-form-address">
@@ -569,7 +559,7 @@
                 </button>
                 <span class="tooltip">Введите&nbsp;название улицы,&nbsp;дома&nbsp;и&nbsp;квартиры</span>
               </span>
-              <input class="delivery-form-address field-form" type="text" name="delivery-address" id="delivery-address"
+              <input class="delivery-form-address field-form" id="delivery-address" type="text" name="delivery-address"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             <button class="subscription-button" type="submit">Отправить</button>
@@ -622,13 +612,11 @@
           <li class="social-icon-item">
             <a class="button social-icon-anchor" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Интаграм</span>
-
               <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.53-5.96C13.83 6 13.63 6 12 6c-1.63 0-1.83 0-2.47.04-.64.03-1.08.13-1.46.28-.4.15-.76.38-1.06.69-.3.3-.54.66-.7 1.06-.14.38-.24.82-.27 1.46C6 10.17 6 10.37 6 12c0 1.63 0 1.83.04 2.47.03.64.13 1.08.28 1.46.15.4.38.76.69 1.06.3.3.66.54 1.06.7.38.14.82.24 1.46.27.64.03.84.04 2.47.04 1.63 0 1.83 0 2.47-.04a4.43 4.43 0 0 0 1.46-.28c.4-.15.76-.38 1.06-.69.3-.3.54-.66.7-1.06.14-.38.24-.82.27-1.46.03-.64.04-.84.04-2.47 0-1.63 0-1.83-.04-2.47a4.43 4.43 0 0 0-.28-1.46c-.15-.4-.38-.76-.69-1.06a2.93 2.93 0 0 0-1.06-.7 4.42 4.42 0 0 0-1.46-.27Zm-4.6 3.84a3 3 0 1 1 4.25 4.24 3 3 0 0 1-4.24-4.24Zm5.81-1.56a.75.75 0 1 1-1.06 1.06.75.75 0 0 1 1.06-1.06Zm-2.4 2.4a1.8 1.8 0 1 0-2.55 2.55 1.8 1.8 0 0 0 2.54-2.54Z" />
               </svg>
-
             </a>
           </li>
         </ul>
@@ -667,14 +655,14 @@
           <img class="icon-htmlacademy" src="images/icons/logo-htmlacademy.svg" alt="иконка htmlacademy" width="93"
             height="27">
         </a>
-        <p class="made-in-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru">.htmlacademy</a>
+        <p class="made-in-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>
           &#169;
           2021</p>
       </section>
     </div>
   </footer>
 
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-answer">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -684,16 +672,16 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-field-group">
             <label class="visually-hidden" for="modal-name">Имя и фамилия</label>
-            <input class="field-form modal-text" type="text" id="modal-name" name="name" placeholder="Имя и фамилия">
+            <input class="field-form modal-text" id="modal-name" type="text" name="name" placeholder="Имя и фамилия">
           </p>
           <p class="form-field-group">
             <label class="visually-hidden" for="modal-email">электронная почта</label>
-            <input class="field-form modal-text" type="text" id="modal-email" name="email" required
-              placeholder="email@example.com">
+            <input class="field-form modal-text" id="modal-email" type="text" name="email"
+              placeholder="email@example.com" required>
           </p>
           <p class="form-field-group">
             <label class="visually-hidden" for="modal-multiline">В свободной форме</label>
-            <textarea class="field-form modal-text multiline" type="text" id="modal-multiline" name="comment"
+            <textarea class="field-form modal-text multiline" id="modal-multiline" name="comment"
               placeholder="В свободной форме"></textarea>
           </p>
           <button class="subscription-button" type="submit">Отправить</button>
