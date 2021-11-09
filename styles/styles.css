@@ -477,6 +477,10 @@ img {
   display: flex;
 }
 
+.subscription-button.basket {
+  text-decoration: none;
+}
+
 .total-price {
   margin-left: auto;
 }
